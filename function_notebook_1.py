@@ -34,20 +34,20 @@ warnings.filterwarnings("ignore")
 # In[9]:
 
 
-df = pd.read_csv('data/regularseason17.csv').drop('Unnamed: 0', axis = 1)
+#df = pd.read_csv('data/regularseason17.csv').drop('Unnamed: 0', axis = 1)
 
-X = df.drop('fav_win',axis=1)
-y = df['fav_win']
+#X = df.drop('fav_win',axis=1)
+#y = df['fav_win']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-X_train.shape, X_test.shape
+#X_train.shape, X_test.shape
 
 
 # In[10]:
 
 
-y.value_counts(normalize=True)
+#y.value_counts(normalize=True)
 
 
 # ## 2. Function Builds for Project
@@ -57,15 +57,15 @@ y.value_counts(normalize=True)
 # In[11]:
 
 
-ss = StandardScaler()
-X_train_scaled = ss.fit_transform(X_train)
-X_test_scaled = ss.transform(X_test)
+#ss = StandardScaler()
+#X_train_scaled = ss.fit_transform(X_train)
+#X_test_scaled = ss.transform(X_test)
 
 
 # In[12]:
 
 
-len(X_test_scaled)
+#len(X_test_scaled)
 
 
 # In[13]:
@@ -86,29 +86,29 @@ def feature_select(X_train,y_train,estimator,min_features,step=1):
 # In[14]:
 
 
-X_train_scaled = pd.DataFrame(X_train_scaled, columns=X_train.columns)
-X_test_scaled = pd.DataFrame(X_test_scaled, columns=X_test.columns)
+#X_train_scaled = pd.DataFrame(X_train_scaled, columns=X_train.columns)
+#X_test_scaled = pd.DataFrame(X_test_scaled, columns=X_test.columns)
 
 
 # In[15]:
 
 
-log_feat=feature_select(X_train_scaled,y_train,LogisticRegression,min_features=10)
-X_train_best_log = X_train_scaled[log_feat]
-X_test_best_log = X_test_scaled[log_feat]
+#log_feat=feature_select(X_train_scaled,y_train,LogisticRegression,min_features=10)
+#X_train_best_log = X_train_scaled[log_feat]
+#X_test_best_log = X_test_scaled[log_feat]
 
 
 # In[16]:
 
 
-len(X_test_best_log)
+#len(X_test_best_log)
 
 
 # In[17]:
 
 
-y_train = y_train.reset_index(drop=True)
-y_train
+#y_train = y_train.reset_index(drop=True)
+#y_train
 
 
 # ### 2b. Logistic Regression Model
@@ -194,7 +194,7 @@ def logreg(X_train, X_test, y_train, y_test, cv=5):
 # In[22]:
 
 
-logreg(X_train_best_log, X_test_best_log, y_train, y_test)
+#logreg(X_train_best_log, X_test_best_log, y_train, y_test)
 
 
 # ### 2c. K-Nearest Neighbors Model
@@ -276,7 +276,7 @@ def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
 
 
 # Takes 6 minutes and 25 seconds to run
-knn(X_train_scaled, X_test_scaled, y_train, y_test)
+#knn(X_train_scaled, X_test_scaled, y_train, y_test)
 
 
 # In[ ]:
@@ -299,14 +299,14 @@ knn(X_train_scaled, X_test_scaled, y_train, y_test)
 # In[25]:
 
 
-dtree_feats=feature_select(X_train_scaled,y_train,DecisionTreeClassifier,min_features=10)
+#dtree_feats=feature_select(X_train_scaled,y_train,DecisionTreeClassifier,min_features=10)
 
 
 # In[26]:
 
 
-X_train_best_dtree=X_train[dtree_feats]
-X_test_best_dtree=X_test[dtree_feats]
+#X_train_best_dtree=X_train[dtree_feats]
+#X_test_best_dtree=X_test[dtree_feats]
 
 
 # Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
@@ -386,7 +386,7 @@ def dtree(X_train, X_test, y_train, y_test, cv=5):
 
 
 #Took 14 min to run
-dtree(X_train_best_dtree, X_test_best_dtree, y_train, y_test)
+#dtree(X_train_best_dtree, X_test_best_dtree, y_train, y_test)
 
 
 # ### 2e. Random Forest Model
@@ -396,9 +396,9 @@ dtree(X_train_best_dtree, X_test_best_dtree, y_train, y_test)
 # In[29]:
 
 
-random_forest_feat=feature_select(X_train_scaled,y_train,RandomForestClassifier,min_features=10)
-X_train_best_rforest=X_train_scaled[random_forest_feat]
-X_test_best_rforest=X_test_scaled[random_forest_feat]
+#random_forest_feat=feature_select(X_train_scaled,y_train,RandomForestClassifier,min_features=10)
+#X_train_best_rforest=X_train_scaled[random_forest_feat]
+#X_test_best_rforest=X_test_scaled[random_forest_feat]
 
 
 # In[31]:
@@ -470,7 +470,7 @@ def random_forest(X_train, X_test, y_train, y_test, cv=5):
 
 
 # Takes 1 hour and 6 minutes
-random_forest(X_train, X_test, y_train, y_test, cv=5)
+#random_forest(X_train, X_test, y_train, y_test, cv=5)
 
 
 # ### 2f. Bagging Classifier Model
@@ -480,9 +480,9 @@ random_forest(X_train, X_test, y_train, y_test, cv=5)
 # In[ ]:
 
 
-bagging_feat=feature_select(X_train_scaled,y_train,BaggingClassifier,min_features=10)
-X_train_best_bag=X_train_scaled[bagging_feat]
-X_test_best_bag=X_test_scaled[bagging_feat]
+#bagging_feat=feature_select(X_train_scaled,y_train,BaggingClassifier,min_features=10)
+#X_train_best_bag=X_train_scaled[bagging_feat]
+#X_test_best_bag=X_test_scaled[bagging_feat]
 
 
 # In[37]:
@@ -572,7 +572,7 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
 
 
 # Takes about 7-10 minutes to run
-bagged(X_train_best_bag, X_test_best_bag, y_train, y_test, cv=5)
+#bagged(X_train_best_bag, X_test_best_bag, y_train, y_test, cv=5)
 
 
 # ### 2g. XGBoost Classifier Model
@@ -656,7 +656,7 @@ def xgboost(X_train, X_test, y_train, y_test, cv=5):
 # In[76]:
 
 
-xgboost(X_train, X_test, y_train, y_test, cv=5)
+#xgboost(X_train, X_test, y_train, y_test, cv=5)
 
 
 # In[ ]:
