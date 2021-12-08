@@ -500,7 +500,7 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     
     # Instantiate & fit Bagging Classifier model for GridSearch
     grid_bag = BaggingClassifier(DecisionTreeClassifier(), random_state=42)
-    grid_bag.fit(X_train, y_train)
+    #grid_bag.fit(X_train, y_train)
     
     # Instantiate & fit GridSearchCV with accuracy scoring
     gs = GridSearchCV(estimator=grid_bag, param_grid=grid, cv=cv, scoring='accuracy')
@@ -537,16 +537,16 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     #bagging.fit(X_train, y_train)
     
     # Create prediction variable using test data
-    y_pred = bagging.predict(X_test)
+    y_pred = gs.predict(X_test)
     
     # Run cross-validate score with cv folds from function parameter
-    cv_results = cross_val_score(bagging, X_train, y_train, cv=cv)
+    cv_results = cross_val_score(gs, X_train, y_train, cv=cv)
     print(f'Mean Cross-Val Score: {cv_results.mean()}')
     
     # Run and print accuracy, recall, precision and f1 scores
-    train_score = bagging.score(X_train, y_train)
+    train_score = gs.score(X_train, y_train)
     print(f'Train Mean Accuracy Score: {train_score}')
-    test_score = bagging.score(X_test, y_test)
+    test_score = gs.score(X_test, y_test)
     print(f'Test Mean Accuracy Score: {test_score}')
     
     rec_score = recall_score(y_test, y_pred)
@@ -560,12 +560,12 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     
     # Plot an ROC curve (only works with binary data)
     fig, ax = plt.subplots()
-    plot_roc_curve(bagging, X_train, y_train, name='train', ax=ax)
-    plot_roc_curve(bagging, X_test, y_test, name='test', ax=ax)
+    plot_roc_curve(gs, X_train, y_train, name='train', ax=ax)
+    plot_roc_curve(gs, X_test, y_test, name='test', ax=ax)
     
     # Plot Confusion Matrix
-    plot_confusion_matrix(bagging, X_train, y_train)
-    plot_confusion_matrix(bagging, X_test, y_test);
+    plot_confusion_matrix(gs, X_train, y_train)
+    plot_confusion_matrix(gs, X_test, y_test);
 
 
 # In[38]:
