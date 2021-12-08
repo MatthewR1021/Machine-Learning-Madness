@@ -1,1 +1,6 @@
-# Machine-Learning-Project3
+# Overview
+In this project we analyzed various years of college basketball using a data set we found on kaggle March Machine Learning Mania 2021(https://www.kaggle.com/c/ncaam-march-mania-2021). We then filtered this data set and created the FavWin column that would display a 1 if the favorite won and a 0 if the underdog one. The ranking we based this off of are the KenPom rankings for that point in time. KenPom is a well respected rating system in college basketball and was the best way for us to evaluate all of the divison 1 teams.
+# Business Problem
+The sports gambling industry is one of the fastest growing in the country right now. Steadily there have been more and more states legalizing it and companies like DraftKings, FanDuel and BetMGM are growing larger and larger each day. With this industry growing we decided to analyze college basketball and if using different Machine Learning models would give us an edge against these sportsbooks. We will run models on the regular season with a focus on one of the most heavily gambled events of the year which is the annual March Madness tournament. In a world of unpredictability we will attempt to use Machine Learning to gain an edge.
+# Data
+The data that is used for this project can be found on kaggle at https://www.kaggle.com/c/ncaam-march-mania-2021. Our cleaning and managing of the data can be found in this repository under the data_cleaning notebook.
