@@ -248,9 +248,9 @@ def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     print(f'Mean Cross-Val Score: {cv_results.mean()}')
     
     # Run and print accuracy, recall, precision and f1 scores
-    train_score = knn.score(X_train, y_train)
+    train_score = gs.score(X_train, y_train)
     print(f'Train Mean Accuracy: {train_score}')
-    test_score = knn.score(X_test, y_test)
+    test_score = gs.score(X_test, y_test)
     print(f'Test Mean Accuracy: {test_score}')
     
     rec_score = recall_score(y_test, y_pred)
