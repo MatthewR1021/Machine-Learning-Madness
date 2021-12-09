@@ -22,9 +22,9 @@ We set the win/loss outcome for the favored team as the binary target variable, 
 We then use an iterative approach to build 6 predictive, classification models: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, Bagging classifier and XGBoost. We utilize hyperparameter tuning, cross-validation and scoring to select the highest performing, predictive models. This approach is applied to regular season, postseason and cumulative postseason data.
 
 ## Results
-After comparing accuracy scores across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. While XGBoost and Logistic Regression yield the same accuracy score, we opt for the latter because its standard deviation is half of that of XGBoost's.
+After comparing metrics across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. While XGBoost and Logistic Regression yield the same accuracy score, we opt to go with latter because its standard deviation is half of that of XGBoost's.
 
-![img1](https://i.ibb.co/G2kV1bW/a.png)
+![img1](https://i.ibb.co/dGWBMhw/f.png)
 
 Our model consistently outperforms the baseline (i.e. only betting on favored teams) in postseason tournaments.
 
@@ -34,12 +34,21 @@ There's inherent value in correctly betting on underdogs, as that yields higher 
 
 ![img4](https://i.ibb.co/NSLBHBp/d.png)
 
-The results are very strong.
+With a 71% mean accuracy score of correctly predicting underdogs, our model performs quite well.
 
 ![img3](https://i.ibb.co/p37vTPr/c.png)
 
 ## Conclusions
-TBD
+The results of our logistic regression model in the tournament are very strong:
+- Overall 78% mean accuracy score for single-game predictions
+- 71% mean accuracy score for underdog predictions
+
+As such, we recommend following the model's underdog predictions for the duration of the tournament. Doing so will help maximize returns.
+
+For next steps, we'd like to explore the following:
+- Integrate moneyline data to further identify value
+- Incorporate more player-specific data to predict how a player will perform on a given day
+- Look at adjusting bet sizing to implement risk-adjusted wagers
 
 ## For More Information
 Please review our full analysis in our Jupyter Notebook or presentation deck.
