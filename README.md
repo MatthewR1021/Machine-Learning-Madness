@@ -51,7 +51,7 @@ For next steps, we'd like to explore the following:
 - Look at adjusting bet sizing to implement risk-adjusted wagers
 
 ## For More Information
-Please review our full analysis in our Jupyter Notebook or presentation deck.
+Please review our full analysis in our [Jupyter Notebook](MAIN_Notebook.ipynb) or presentation deck.
 
 For additional questions, please contact [Matthew](https://www.linkedin.com/in/matthew-reinhart-1bb372173/), [Mendy](https://www.linkedin.com/in/mendy-nemanow-2594ab225/), [Paul](https://www.linkedin.com/in/paul-lindquist/) or [TJ](https://www.linkedin.com/in/thomas-tj-bray-24499354/).
 
