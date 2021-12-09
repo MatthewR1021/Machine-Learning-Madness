@@ -22,7 +22,21 @@ We set the win/loss outcome for the favored team as the binary target variable, 
 We then use an iterative approach to build 6 predictive, classification models: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, Bagging classifier and XGBoost. We utilize hyperparameter tuning, cross-validation and scoring to select the highest performing, predictive models. This approach is applied to regular season, postseason and cumulative postseason data.
 
 ## Results
-TBD
+After comparing accuracy scores across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. While XGBoost and Logistic Regression yield the same accuracy score, we opt to go with latter because its standard deviation is half of that of XGBoost's.
+
+![img1](https://i.ibb.co/G2kV1bW/a.png)
+
+Our model consistently outperforms the baseline (i.e. only betting on favored teams) in postseason tournaments.
+
+![img2](https://i.ibb.co/3kbq72V/e.png)
+
+There's inherent value in correctly betting on underdogs, as that yields higher payouts. We give specific focus to those predictions to assess our model's performance.
+
+![img4](https://i.ibb.co/NSLBHBp/d.png)
+
+The results are very strong.
+
+![img3](https://i.ibb.co/p37vTPr/c.png)
 
 ## Conclusions
 TBD
