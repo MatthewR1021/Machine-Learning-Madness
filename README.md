@@ -24,7 +24,7 @@ We then use an iterative approach to build 6 predictive, classification models: 
 ## Results
 After comparing metrics across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. While XGBoost and Logistic Regression yield the same accuracy score, we opt to go with latter because its standard deviation is half of that of XGBoost's.
 
-![img1](https://i.ibb.co/dGWBMhw/f.png)
+![img1](https://i.ibb.co/zscPxwd/9.png)
 
 Our model consistently outperforms the baseline (i.e. only betting on favored teams) in postseason tournaments.
 
