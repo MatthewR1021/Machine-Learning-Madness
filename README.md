@@ -56,7 +56,7 @@ For next steps, we'd like to explore the following:
 - Look at adjusting bet sizing to implement risk-adjusted wagers
 
 ## For More Information
-Please review our full analysis in our [Jupyter Notebook](MAIN_Notebook.ipynb) or presentation deck.
+Please review our full analysis in our [Jupyter Notebook](MAIN_Notebook.ipynb) or [presentation deck](Project_Presentation.pdf).
 
 For additional questions, please contact [Matthew](https://www.linkedin.com/in/matthew-reinhart-1bb372173/), [Mendy](https://www.linkedin.com/in/mendy-nemanow-2594ab225/), [Paul](https://www.linkedin.com/in/paul-lindquist/) or [TJ](https://www.linkedin.com/in/thomas-tj-bray-24499354/).
 
@@ -65,8 +65,9 @@ For additional questions, please contact [Matthew](https://www.linkedin.com/in/m
 ├── README.md                           <- The top-level README for reviewers of this project
 ├── MAIN_Notebook.ipynb                 <- Narrative documentation of analysis in Jupyter Notebook
 ├── Project_Presentation.pdf            <- PDF version of project presentation
-├── Kaggle_Datasets                     <- Raw .csv files from Kaggle
-├── data                                <- Our cleaned, exported .csv files to import
+├── function_notebook_1.py              <- Python script with all functions to be called in MAIN Notebook
+├── Kaggle_Datasets                     <- Raw .csv source files from Kaggle
+├── data                                <- Cleaned, exported .csv files to import in MAIN Notebook
 ├── Regular_Season_Notebooks            <- Separate Notebooks showing completed models on regular season data
 ├── Postseason_Notebooks                <- Separate Notebooks showing completed models on postseason data
 └── Obselete                            <- Older Notebooks that aren't necessary for final deliverables
