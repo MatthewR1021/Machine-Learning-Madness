@@ -19,12 +19,16 @@ This project uses datasets from Kaggle's *[March Machine Learning Mania 2021](ht
 ## Methodology
 We set the win/loss outcome for the favored team as the binary target variable, with 1 equaling a win for the favored team and 0 equaling a win for the underdog. Rankings are assigned using the reputable KenPom ratings.
 
-We then use an iterative approach to build 6 predictive, classification models: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, Bagging classifier and XGBoost. We utilize hyperparameter tuning, cross-validation and scoring to select the highest performing, predictive models. This approach is applied to regular season, postseason and cumulative postseason data.
+We then use an iterative approach to build 6 predictive, classification models: Logistic regression, K-Nearest Neighbors, Decision Tree, Random Forest, Bagging classifier and XGBoost. We utilize hyperparameter tuning, cross-validation and scoring to select the highest performing, predictive models. This approach is applied to regular season, postseason and cumulative postseason data.
 
 ## Results
-After comparing metrics across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. Logistic Regression yields both the highest accuracy score and lowest standard deviation.
+After comparing metrics across all 6 of our models, the top 3 performers are logistic regression, XGBoost and Random Forest. Logistic regression yields the most consistent, highest accuracy score with the lowest standard deviation. Consistent accuracy and lower variance can lead to more accurate bets.
 
-![img1](https://i.ibb.co/vd8QdYq/h.png)
+![img1](https://i.ibb.co/23tBCwG/i.png)
+
+In moving forward with our logistic regression model, we find that using season-long data as our "train data" and the postseason tournament as our "test data" generates consistently high accuracy scores. We use this 
+
+![img7](https://i.ibb.co/TBLyYkF/j.png)
 
 Our model consistently outperforms the baseline (i.e. only betting on favored teams) in postseason tournaments.
 
@@ -46,6 +50,7 @@ The results of our logistic regression model in the tournament are very strong:
 As such, we recommend following the model's underdog predictions for the duration of the tournament. Doing so will help maximize returns.
 
 For next steps, we'd like to explore the following:
+- Use day-by-day KenPom rankings
 - Integrate moneyline data to further identify value
 - Incorporate more player-specific data to predict how a player will perform on a given day
 - Look at adjusting bet sizing to implement risk-adjusted wagers
@@ -58,8 +63,11 @@ For additional questions, please contact [Matthew](https://www.linkedin.com/in/m
 ## Respository Structure
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── Main_Notebook.ipynb                 <- Narrative documentation of analysis in Jupyter notebook
-├── project_presentation.pdf            <- PDF version of project presentation
-├── data                                <- Both sourced externally and generated from code
-└── images                              <- Both sourced externally and generated from code
+├── MAIN_Notebook.ipynb                 <- Narrative documentation of analysis in Jupyter Notebook
+├── Project_Presentation.pdf            <- PDF version of project presentation
+├── Kaggle_Datasets                     <- Raw .csv files from Kaggle
+├── data                                <- Our cleaned, exported .csv files to import
+├── Regular_Season_Notebooks            <- Separate Notebooks showing completed models on regular season data
+├── Postseason_Notebooks                <- Separate Notebooks showing completed models on postseason data
+└── Obselete                            <- Older Notebooks that aren't necessary for final deliverables
 ```
