@@ -26,7 +26,7 @@ After comparing metrics across all 6 of our models, the top 3 performers are log
 
 ![img1](https://i.ibb.co/23tBCwG/i.png)
 
-In moving forward with our logistic regression model, we find that using season-long data as our "train data" and the postseason tournament as our "test data" generates consistently high accuracy scores. We use this 
+In moving forward with our logistic regression model, we find that using season-long data as our "train data" and the postseason tournament as our "test data" generates consistently high accuracy scores. We use this data split process in our final model.
 
 ![img7](https://i.ibb.co/TBLyYkF/j.png)
 
