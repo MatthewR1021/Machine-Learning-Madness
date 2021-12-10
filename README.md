@@ -22,9 +22,9 @@ We set the win/loss outcome for the favored team as the binary target variable, 
 We then use an iterative approach to build 6 predictive, classification models: Logistic Regression, K-Nearest Neighbors, Decision Tree, Random Forest, Bagging classifier and XGBoost. We utilize hyperparameter tuning, cross-validation and scoring to select the highest performing, predictive models. This approach is applied to regular season, postseason and cumulative postseason data.
 
 ## Results
-After comparing metrics across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. While XGBoost and Logistic Regression yield the same accuracy score, we opt to go with latter because its standard deviation is half of that of XGBoost's.
+After comparing metrics across all 6 of our models, the top 3 performers are Logistic Regression, XGBoost and Random Forest. Logistic Regression yields both the highest accuracy score and lowest standard deviation.
 
-![img1](https://i.ibb.co/zscPxwd/9.png)
+![img1](https://i.ibb.co/vd8QdYq/h.png)
 
 Our model consistently outperforms the baseline (i.e. only betting on favored teams) in postseason tournaments.
 
@@ -40,7 +40,7 @@ With a 71% mean accuracy score of correctly predicting underdogs, our model perf
 
 ## Conclusions
 The results of our logistic regression model in the tournament are very strong:
-- Overall 78% mean accuracy score for single-game predictions
+- Overall 82% mean accuracy score for single-game predictions
 - 71% mean accuracy score for underdog predictions
 
 As such, we recommend following the model's underdog predictions for the duration of the tournament. Doing so will help maximize returns.
@@ -58,7 +58,7 @@ For additional questions, please contact [Matthew](https://www.linkedin.com/in/m
 ## Respository Structure
 ```
 ├── README.md                           <- The top-level README for reviewers of this project
-├── final_notebook.ipynb                <- Narrative documentation of analysis in Jupyter notebook
+├── Main_Notebook.ipynb                 <- Narrative documentation of analysis in Jupyter notebook
 ├── project_presentation.pdf            <- PDF version of project presentation
 ├── data                                <- Both sourced externally and generated from code
 └── images                              <- Both sourced externally and generated from code

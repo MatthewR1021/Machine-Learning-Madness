@@ -1,0 +1,372 @@
+﻿Year,Kaggle,TeamID,Sportsipy,KenPom
+2022,"Abilene Chr',",1101,Abilene Christian,Abilene Christian
+2022," 'Air Force',",1102,Air Force,Air Force
+2022," 'Akron',",1103,Akron,Akron
+2022," 'Alabama',",1104,Alabama,Alabama
+2022," 'Alabama A&M',",1105,Alabama A&M,Alabama A&M
+2022," 'Alabama St',",1106,Alabama State,Alabama St.
+2022," 'SUNY Albany',",1107,Albany (NY),Albany
+2022," 'Alcorn St',",1108,Alcorn State,Alcorn St.
+2022," 'Alliant Intl',",1109,,
+2022," 'American Univ',",1110,American,American
+2022," 'Appalachian St',",1111,Appalachian State,Appalachian St.
+2022," 'Arizona',",1112,Arizona,Arizona
+2022," 'Arizona St',",1113,Arizona State,Arizona St.
+2022," 'Ark Little Rock',",1114,Little Rock,Little Rock
+2022," 'Ark Pine Bluff',",1115,Arkansas-Pine Bluff,Arkansas Pine Bluff
+2022," 'Arkansas',",1116,Arkansas,Arkansas
+2022," 'Arkansas St',",1117,Arkansas State,Arkansas St.
+2022," 'Armstrong St',",1118,,
+2022," 'Army',",1119,Army,Army
+2022," 'Auburn',",1120,Auburn,Auburn
+2022," 'Augusta',",1121,,
+2022," 'Austin Peay',",1122,Austin Peay,Austin Peay
+2022," 'Ball St',",1123,Ball State,Ball St.
+2022," 'Baylor',",1124,Baylor,Baylor
+2022," 'Belmont',",1125,Belmont,Belmont
+2022," 'Bethune-Cookman',",1126,Bethune-Cookman,Bethune Cookman
+2022," 'Binghamton',",1127,Binghamton,Binghamton
+2022," 'Birmingham So',",1128,Birmingham-Southern,
+2022," 'Boise St',",1129,Boise State,Boise St.
+2022," 'Boston College',",1130,Boston College,Boston College
+2022," 'Boston Univ',",1131,Boston University,Boston University
+2022," 'Bowling Green',",1132,Bowling Green State,Bowling Green
+2022," 'Bradley',",1133,Bradley,Bradley
+2022," 'Brooklyn',",1134,,
+2022," 'Brown',",1135,Brown,Brown
+2022," 'Bryant',",1136,Bryant,Bryant
+2022," 'Bucknell',",1137,Bucknell,Bucknell
+2022," 'Buffalo',",1138,Buffalo,Buffalo
+2022," 'Butler',",1139,Butler,Butler
+2022," 'BYU',",1140,BYU,BYU
+2022," 'C Michigan',",1141,Central Michigan,Central Michigan
+2022," 'Cal Poly',",1142,Cal Poly,Cal Poly
+2022," 'California',",1143,California,California
+2022," 'Campbell',",1144,Campbell,Campbell
+2022," 'Canisius',",1145,Canisius,Canisius
+2022," 'Cent Arkansas',",1146,Central Arkansas,Central Arkansas
+2022," 'Centenary',",1147,,
+2022," 'Central Conn',",1148,Central Connecticut,Central Connecticut
+2022," 'Charleston So',",1149,Charleston Southern,Charleston Southern
+2022," 'Charlotte',",1150,Charlotte,Charlotte
+2022," 'Chattanooga',",1151,Chattanooga,Chattanooga
+2022," 'Chicago St',",1152,Chicago State,Chicago St.
+2022," 'Cincinnati',",1153,Cincinnati,Cincinnati
+2022," 'Citadel',",1154,The Citadel,The Citadel
+2022," 'Clemson',",1155,Clemson,Clemson
+2022," 'Cleveland St',",1156,Cleveland State,Cleveland St.
+2022," 'Coastal Car',",1157,Coastal Carolina,Coastal Carolina
+2022," 'Col Charleston',",1158,College of Charleston,Charleston
+2022," 'Colgate',",1159,Colgate,Colgate
+2022," 'Colorado',",1160,Colorado,Colorado
+2022," 'Colorado St',",1161,Colorado State,Colorado St.
+2022," 'Columbia',",1162,Columbia,Columbia
+2022," 'Connecticut',",1163,UConn,Connecticut
+2022," 'Coppin St',",1164,Coppin State,Coppin St.
+2022," 'Cornell',",1165,Cornell,Cornell
+2022," 'Creighton',",1166,Creighton,Creighton
+2022," 'CS Bakersfield',",1167,Cal State Bakersfield,Cal St. Bakersfield
+2022," 'CS Fullerton',",1168,Cal State Fullerton,Cal St. Fullerton
+2022," 'CS Northridge',",1169,Cal State Northridge,Cal St. Northridge
+2022," 'CS Sacramento',",1170,Sacramento State,Sacramento St.
+2022," 'Dartmouth',",1171,Dartmouth,Dartmouth
+2022," 'Davidson',",1172,Davidson,Davidson
+2022," 'Dayton',",1173,Dayton,Dayton
+2022," 'Delaware',",1174,Delaware,Delaware
+2022," 'Delaware St',",1175,Delaware State,Delaware St.
+2022," 'Denver',",1176,Denver,Denver
+2022," 'DePaul',",1177,DePaul,DePaul
+2022," 'Detroit',",1178,Detroit,Detroit Mercy
+2022," 'Drake',",1179,Drake,Drake
+2022," 'Drexel',",1180,Drexel,Drexel
+2022," 'Duke',",1181,Duke,Duke
+2022," 'Duquesne',",1182,Duquesne,Duquesne
+2022," 'E Illinois',",1183,Eastern Illinois,Eastern Illinois
+2022," 'E Kentucky',",1184,Eastern Kentucky,Eastern Kentucky
+2022," 'E Michigan',",1185,Eastern Michigan,Eastern Michigan
+2022," 'E Washington',",1186,Eastern Washington,Eastern Washington
+2022," 'East Carolina',",1187,East Carolina,East Carolina
+2022," 'SIUE',",1188,SIU-Edwardsville,SIU Edwardsville
+2022," 'Elon',",1189,Elon,Elon
+2022," 'ETSU',",1190,ETSU,East Tennessee St.
+2022," 'Evansville',",1191,Evansville,Evansville
+2022," 'F Dickinson',",1192,,Fairleigh Dickinson
+2022," 'Fairfield',",1193,Fairfield,Fairfield
+2022," 'FL Atlantic',",1194,Florida Atlantic,Florida Atlantic
+2022," 'FL Gulf Coast',",1195,Florida Gulf Coast,Florida Gulf Coast
+2022," 'Florida',",1196,Florida,Florida
+2022," 'Florida A&M',",1197,Florida A&M,Florida A&M
+2022," 'Florida Intl',",1198,Florida International,FIU
+2022," 'Florida St',",1199,Florida State,Florida St.
+2022," 'Fordham',",1200,Fordham,Fordham
+2022," 'Fresno St',",1201,Fresno State,Fresno St.
+2022," 'Furman',",1202,Furman,Furman
+2022," 'G Washington',",1203,George Washington,George Washington
+2022," 'Ga Southern',",1204,Georgia Southern,Georgia Southern
+2022," 'Gardner Webb',",1205,Gardner-Webb,Gardner Webb
+2022," 'George Mason',",1206,George Mason,George Mason
+2022," 'Georgetown',",1207,Georgetown,Georgetown
+2022," 'Georgia',",1208,Georgia,Georgia
+2022," 'Georgia St',",1209,Georgia State,Georgia St.
+2022," 'Georgia Tech',",1210,Georgia Tech,Georgia Tech
+2022," 'Gonzaga',",1211,Gonzaga,Gonzaga
+2022," 'Grambling',",1212,Grambling,Grambling St.
+2022," 'Grand Canyon',",1213,Grand Canyon,Grand Canyon
+2022," 'Hampton',",1214,Hampton,Hampton
+2022," 'Hardin-Simmons',",1215,,
+2022," 'Hartford',",1216,Hartford,Hartford
+2022," 'Harvard',",1217,Harvard,Harvard
+2022," 'Hawaii',",1218,Hawaii,Hawaii
+2022," 'High Point',",1219,High Point,High Point
+2022," 'Hofstra',",1220,Hofstra,Hofstra
+2022," 'Holy Cross',",1221,Holy Cross,Holy Cross
+2022," 'Houston',",1222,Houston,Houston
+2022," 'Houston Bap',",1223,Houston Baptist,Houston Baptist
+2022," 'Howard',",1224,Howard,Howard
+2022," 'Idaho',",1225,Idaho,Idaho
+2022," 'Idaho St',",1226,Idaho State,Idaho St.
+2022," 'IL Chicago',",1227,UIC,Illinois Chicago
+2022," 'Illinois',",1228,Illinois,Illinois
+2022," 'Illinois St',",1229,Illinois State,Illinois St.
+2022," 'Incarnate Word',",1230,,Incarnate Word
+2022," 'Indiana',",1231,Indiana,Indiana
+2022," 'Indiana St',",1232,Indiana State,Indiana St.
+2022," 'Iona',",1233,Iona,Iona
+2022," 'Iowa',",1234,Iowa,Iowa
+2022," 'Iowa St',",1235,Iowa State,Iowa St.
+2022," 'PFW',",1236,Purdue-Fort Wayne,Purdue Fort Wayne
+2022," 'IUPUI',",1237,IUPUI,IUPUI
+2022," 'Jackson St',",1238,Jackson State,Jackson St.
+2022," 'Jacksonville',",1239,Jacksonville,Jacksonville
+2022," 'Jacksonville St',",1240,Jacksonville State,Jacksonville St.
+2022," 'James Madison',",1241,James Madison,James Madison
+2022," 'Kansas',",1242,Kansas,Kansas
+2022," 'Kansas St',",1243,Kansas State,Kansas St.
+2022," 'Kennesaw',",1244,Kennesaw State,Kennesaw St.
+2022," 'Kent',",1245,Kent State,Kent St.
+2022," 'Kentucky',",1246,Kentucky,Kentucky
+2022," 'La Salle',",1247,La Salle,La Salle
+2022," 'Lafayette',",1248,Lafayette,Lafayette
+2022," 'Lamar',",1249,Lamar,Lamar
+2022," 'Lehigh',",1250,Lehigh,Lehigh
+2022," 'Liberty',",1251,Liberty,Liberty
+2022," 'Lipscomb',",1252,Lipscomb,Lipscomb
+2022," 'Long Beach St',",1253,Long Beach State,Long Beach St.
+2022," 'LIU Brooklyn',",1254,LIU,LIU
+2022," 'Longwood',",1255,Longwood,Longwood
+2022," 'Louisiana Tech',",1256,Louisiana Tech,Louisiana Tech
+2022," 'Louisville',",1257,Louisville,Louisville
+2022," 'Loy Marymount',",1258,Loyola Marymount,Loyola Marymount
+2022," 'Loyola MD',",1259,Loyola (MD),Loyola MD
+2022," 'Loyola-Chicago',",1260,Loyola (IL),Loyola Chicago
+2022," 'LSU',",1261,LSU,LSU
+2022," 'MA Lowell',",1262,UMass-Lowell,UMass Lowell
+2022," 'Maine',",1263,Maine,Maine
+2022," 'Manhattan',",1264,Manhattan,Manhattan
+2022," 'Marist',",1265,Marist,Marist
+2022," 'Marquette',",1266,Marquette,Marquette
+2022," 'Marshall',",1267,Marshall,Marshall
+2022," 'Maryland',",1268,Maryland,Maryland
+2022," 'Massachusetts',",1269,UMass,Massachusetts
+2022," 'McNeese St',",1270,McNeese State,McNeese St.
+2022," 'MD E Shore',",1271,Maryland-Eastern Shore,Maryland Eastern Shore
+2022," 'Memphis',",1272,Memphis,Memphis
+2022," 'Mercer',",1273,Mercer,Mercer
+2022," 'Miami FL',",1274,Miami (FL),Miami FL
+2022," 'Miami OH',",1275,Miami (OH),Miami OH
+2022," 'Michigan',",1276,Michigan,Michigan
+2022," 'Michigan St',",1277,Michigan State,Michigan St.
+2022," 'Minnesota',",1278,Minnesota,Minnesota
+2022," 'Mississippi',",1279,Ole Miss,Mississippi
+2022," 'Mississippi St',",1280,Mississippi State,Mississippi St.
+2022," 'Missouri',",1281,Missouri,Missouri
+2022," 'Missouri KC',",1282,Kansas City,UMKC
+2022," 'Missouri St',",1283,Missouri State,Missouri St.
+2022," 'Monmouth NJ',",1284,Monmouth,Monmouth
+2022," 'Montana',",1285,Montana,Montana
+2022," 'Montana St',",1286,Montana State,Montana St.
+2022," 'Morehead St',",1287,Morehead State,Morehead St.
+2022," 'Morgan St',",1288,Morgan State,Morgan St.
+2022," 'Morris Brown',",1289,,
+2022," 'MS Valley St',",1290,,Mississippi Valley St.
+2022," ""Mt St Mary's"",",1291,Mount St. Mary's,Mount St. Mary's
+2022," 'MTSU',",1292,Middle Tennessee,Middle Tennessee
+2022," 'Murray St',",1293,Murray State,Murray St.
+2022," 'N Colorado',",1294,Northern Colorado,Northern Colorado
+2022," 'N Dakota St',",1295,North Dakota State,North Dakota St.
+2022," 'N Illinois',",1296,Northern Illinois,Northern Illinois
+2022," 'N Kentucky',",1297,Northern Kentucky,Northern Kentucky
+2022," 'Navy',",1298,Navy,Navy
+2022," 'NC A&T',",1299,North Carolina A&T,North Carolina A&T
+2022," 'NC Central',",1300,North Carolina Central,North Carolina Central
+2022," 'NC State',",1301,NC State,N.C. State
+2022," 'NE Illinois',",1302,,
+2022," 'NE Omaha',",1303,,Nebraska Omaha
+2022," 'Nebraska',",1304,Nebraska,Nebraska
+2022," 'Nevada',",1305,Nevada,Nevada
+2022," 'New Hampshire',",1306,New Hampshire,New Hampshire
+2022," 'New Mexico',",1307,New Mexico,New Mexico
+2022," 'New Mexico St',",1308,New Mexico State,New Mexico St.
+2022," 'New Orleans',",1309,New Orleans,New Orleans
+2022," 'Niagara',",1310,Niagara,Niagara
+2022," 'Nicholls St',",1311,Nicholls State,Nicholls St.
+2022," 'NJIT',",1312,NJIT,NJIT
+2022," 'Norfolk St',",1313,Norfolk State,Norfolk St.
+2022," 'North Carolina',",1314,UNC,North Carolina
+2022," 'North Dakota',",1315,North Dakota,North Dakota
+2022," 'North Florida',",1316,North Florida,North Florida
+2022," 'North Texas',",1317,North Texas,North Texas
+2022," 'Northeastern',",1318,Northeastern,Northeastern
+2022," 'Northern Arizona',",1319,Northern Arizona,Northern Arizona
+2022," 'Northern Iowa',",1320,Northern Iowa,Northern Iowa
+2022," 'Northwestern',",1321,Northwestern,Northwestern
+2022," 'Northwestern LA',",1322,,Northwestern St.
+2022," 'Notre Dame',",1323,Notre Dame,Notre Dame
+2022," 'Oakland',",1324,Oakland,Oakland
+2022," 'Ohio',",1325,Ohio,Ohio
+2022," 'Ohio St',",1326,Ohio State,Ohio St.
+2022," 'Okla City',",1327,,
+2022," 'Oklahoma',",1328,Oklahoma,Oklahoma
+2022," 'Oklahoma St',",1329,Oklahoma State,Oklahoma St.
+2022," 'Old Dominion',",1330,Old Dominion,Old Dominion
+2022," 'Oral Roberts',",1331,Oral Roberts,Oral Roberts
+2022," 'Oregon',",1332,Oregon,Oregon
+2022," 'Oregon St',",1333,Oregon State,Oregon St.
+2022," 'Pacific',",1334,Pacific,Pacific
+2022," 'Penn',",1335,Penn,Penn
+2022," 'Penn St',",1336,Penn State,Penn St.
+2022," 'Pepperdine',",1337,Pepperdine,Pepperdine
+2022," 'Pittsburgh',",1338,Pitt,Pittsburgh
+2022," 'Portland',",1339,Portland,Portland
+2022," 'Portland St',",1340,Portland State,Portland St.
+2022," 'Prairie View',",1341,,Prairie View A&M
+2022," 'Presbyterian',",1342,Presbyterian,Presbyterian
+2022," 'Princeton',",1343,Princeton,Princeton
+2022," 'Providence',",1344,Providence,Providence
+2022," 'Purdue',",1345,Purdue,Purdue
+2022," 'Quinnipiac',",1346,Quinnipiac,Quinnipiac
+2022," 'Radford',",1347,Radford,Radford
+2022," 'Rhode Island',",1348,Rhode Island,Rhode Island
+2022," 'Rice',",1349,Rice,Rice
+2022," 'Richmond',",1350,Richmond,Richmond
+2022," 'Rider',",1351,Rider,Rider
+2022," 'Robert Morris',",1352,Robert Morris,Robert Morris
+2022," 'Rutgers',",1353,Rutgers,Rutgers
+2022," 'S Carolina St',",1354,South Carolina State,South Carolina St.
+2022," 'S Dakota St',",1355,South Dakota State,South Dakota St.
+2022," 'S Illinois',",1356,Southern Illinois,Southern Illinois
+2022," 'Sacred Heart',",1357,Sacred Heart,Sacred Heart
+2022," 'Sam Houston St',",1358,Sam Houston State,Sam Houston St.
+2022," 'Samford',",1359,Samford,Samford
+2022," 'San Diego',",1360,San Diego,San Diego
+2022," 'San Diego St',",1361,San Diego State,San Diego St.
+2022," 'San Francisco',",1362,San Francisco,San Francisco
+2022," 'San Jose St',",1363,San Jose State,San Jose St.
+2022," 'UC Santa Barbara',",1364,UCSB,UC Santa Barbara
+2022," 'Santa Clara',",1365,Santa Clara,Santa Clara
+2022," 'Savannah St',",1366,,
+2022," 'SC Upstate',",1367,USC Upstate,USC Upstate
+2022," 'SE Louisiana',",1368,Southeastern Louisiana,Southeastern Louisiana
+2022," 'SE Missouri St',",1369,Southeast Missouri State,Southeast Missouri St.
+2022," 'Seattle',",1370,Seattle,Seattle
+2022," 'Seton Hall',",1371,Seton Hall,Seton Hall
+2022," 'SF Austin',",1372,Stephen F. Austin,Stephen F. Austin
+2022," 'Siena',",1373,Siena,Siena
+2022," 'SMU',",1374,SMU,SMU
+2022," 'South Alabama',",1375,South Alabama,South Alabama
+2022," 'South Carolina',",1376,South Carolina,South Carolina
+2022," 'South Dakota',",1377,South Dakota,South Dakota
+2022," 'South Florida',",1378,South Florida,South Florida
+2022," 'Southern Miss',",1379,Southern Miss,Southern Miss
+2022," 'Southern Univ',",1380,Southern,Southern
+2022," 'Southern Utah',",1381,Southern Utah,Southern Utah
+2022," 'St Bonaventure',",1382,St. Bonaventure,St. Bonaventure
+2022," 'St Francis NY',",1383,St. Francis (NY),St. Francis NY
+2022," 'St Francis PA',",1384,Saint Francis (PA),St. Francis PA
+2022," ""St John's"",",1385,St. John's (NY),St. John's
+2022," ""St Joseph's PA"",",1386,St. Joseph's,Saint Joseph's
+2022," 'St Louis',",1387,Saint Louis,Saint Louis
+2022," ""St Mary's CA"",",1388,Saint Mary's,Saint Mary's
+2022," ""St Peter's"",",1389,St. Peter's,Saint Peter's
+2022," 'Stanford',",1390,Stanford,Stanford
+2022," 'Stetson',",1391,Stetson,Stetson
+2022," 'Stony Brook',",1392,Stony Brook,Stony Brook
+2022," 'Syracuse',",1393,Syracuse,Syracuse
+2022," 'TAM C. Christi',",1394,Texas A&M-Corpus Christi,Texas A&M Corpus Chris
+2022," 'TCU',",1395,TCU,TCU
+2022," 'Temple',",1396,Temple,Temple
+2022," 'Tennessee',",1397,Tennessee,Tennessee
+2022," 'Tennessee St',",1398,Tennessee State,Tennessee St.
+2022," 'Tennessee Tech',",1399,Tennessee Tech,Tennessee Tech
+2022," 'Texas',",1400,Texas,Texas
+2022," 'Texas A&M',",1401,Texas A&M,Texas A&M
+2022," 'Texas St',",1402,Texas State,Texas St.
+2022," 'Texas Tech',",1403,Texas Tech,Texas Tech
+2022," 'TN Martin',",1404,UT-Martin,Tennessee Martin
+2022," 'Toledo',",1405,Toledo,Toledo
+2022," 'Towson',",1406,Towson,Towson
+2022," 'Troy',",1407,Troy,Troy
+2022," 'Tulane',",1408,Tulane,Tulane
+2022," 'Tulsa',",1409,Tulsa,Tulsa
+2022," 'UTRGV',",1410,Texas-Rio Grande Valley,UT Rio Grande Valley
+2022," 'TX Southern',",1411,Texas Southern,Texas Southern
+2022," 'UAB',",1412,Alabama-Birmingham,UAB
+2022," 'UC Davis',",1413,UC-Davis,UC Davis
+2022," 'UC Irvine',",1414,UC-Irvine,UC Irvine
+2022," 'UC Riverside',",1415,UC-Riverside,UC Riverside
+2022," 'UCF',",1416,UCF,UCF
+2022," 'UCLA',",1417,UCLA,UCLA
+2022," 'Louisiana',",1418,Louisiana,Louisiana
+2022," 'ULM',",1419,Louisiana-Monroe,Louisiana Monroe
+2022," 'UMBC',",1420,UMBC,UMBC
+2022," 'UNC Asheville',",1421,UNC Asheville,UNC Asheville
+2022," 'UNC Greensboro',",1422,UNC Greensboro,UNC Greensboro
+2022," 'UNC Wilmington',",1423,UNC Wilmington,UNC Wilmington
+2022," 'UNLV',",1424,UNLV,UNLV
+2022," 'USC',",1425,USC,USC
+2022," 'UT Arlington',",1426,Texas-Arlington,UT Arlington
+2022," 'UT San Antonio',",1427,UTSA,UTSA
+2022," 'Utah',",1428,Utah,Utah
+2022," 'Utah St',",1429,Utah State,Utah St.
+2022," 'Utah Valley',",1430,Utah Valley,Utah Valley
+2022," 'UTEP',",1431,UTEP,UTEP
+2022," 'Utica',",1432,,
+2022," 'VCU',",1433,VCU,VCU
+2022," 'Valparaiso',",1434,Valparaiso,Valparaiso
+2022," 'Vanderbilt',",1435,Vanderbilt,Vanderbilt
+2022," 'Vermont',",1436,Vermont,Vermont
+2022," 'Villanova',",1437,Villanova,Villanova
+2022," 'Virginia',",1438,Virginia,Virginia
+2022," 'Virginia Tech',",1439,Virginia Tech,Virginia Tech
+2022," 'VMI',",1440,VMI,VMI
+2022," 'W Carolina',",1441,Western Carolina,Western Carolina
+2022," 'W Illinois',",1442,Western Illinois,Western Illinois
+2022," 'WKU',",1443,Western Kentucky,Western Kentucky
+2022," 'W Michigan',",1444,Western Michigan,Western Michigan
+2022," 'W Salem St',",1445,,
+2022," 'W Texas A&M',",1446,,
+2022," 'Wagner',",1447,Wagner,Wagner
+2022," 'Wake Forest',",1448,Wake Forest,Wake Forest
+2022," 'Washington',",1449,Washington,Washington
+2022," 'Washington St',",1450,Washington State,Washington St.
+2022," 'Weber St',",1451,Weber State,Weber St.
+2022," 'West Virginia',",1452,West Virginia,West Virginia
+2022," 'WI Green Bay',",1453,Green Bay,Green Bay
+2022," 'WI Milwaukee',",1454,Milwaukee,Milwaukee
+2022," 'Wichita St',",1455,Wichita State,Wichita St.
+2022," 'William & Mary',",1456,William & Mary,William & Mary
+2022," 'Winthrop',",1457,Winthrop,Winthrop
+2022," 'Wisconsin',",1458,Wisconsin,Wisconsin
+2022," 'Wofford',",1459,Wofford,Wofford
+2022," 'Wright St',",1460,Wright State,Wright St.
+2022," 'Wyoming',",1461,Wyoming,Wyoming
+2022," 'Xavier',",1462,Xavier,Xavier
+2022," 'Yale',",1463,Yale,Yale
+2022," 'Youngstown St',",1464,Youngstown State,Youngstown St.
+2022," 'Cal Baptist',",1465,California Baptist,
+2022," 'North Alabama',",1466,North Alabama,North Alabama
+2022," 'Merrimack',",1467,Merrimack,Merrimack
+2022," 'Bellarmine',",1468,Bellarmine,Bellarmine
+2022," 'Dixie St',",1469,Dixie State,Dixie St.
+2022," 'Tarleton St',",1470,Tarleton State,Tarleton St.
+2022, 'UC San Diego',1471,UC-San Diego,UC San Diego
