@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Matt and Paul's Notebook
-
-# ## 1a. Packages and Libraries Import
-
-# In[8]:
-
-
 # Import the relevant packages
 import pandas as pd
 import numpy as np
@@ -28,49 +18,6 @@ from sklearn.feature_selection import RFECV
 import warnings
 warnings.filterwarnings("ignore")
 
-
-# ## 1b. Load Dataset
-
-# In[9]:
-
-
-#df = pd.read_csv('data/regularseason17.csv').drop('Unnamed: 0', axis = 1)
-
-#X = df.drop('fav_win',axis=1)
-#y = df['fav_win']
-
-#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-#X_train.shape, X_test.shape
-
-
-# In[10]:
-
-
-#y.value_counts(normalize=True)
-
-
-# ## 2. Function Builds for Project
-
-# ### 2a. Data Scaling
-
-# In[11]:
-
-
-#ss = StandardScaler()
-#X_train_scaled = ss.fit_transform(X_train)
-#X_test_scaled = ss.transform(X_test)
-
-
-# In[12]:
-
-
-#len(X_test_scaled)
-
-
-# In[13]:
-
-
 def feature_select(X_train,y_train,estimator,min_features,step=1):
     estimator2=estimator()
     selector=RFECV(estimator2,min_features_to_select=min_features,step=step)
@@ -83,53 +30,8 @@ def feature_select(X_train,y_train,estimator,min_features,step=1):
     return best_pred
 
 
-# In[14]:
-
-
-#X_train_scaled = pd.DataFrame(X_train_scaled, columns=X_train.columns)
-#X_test_scaled = pd.DataFrame(X_test_scaled, columns=X_test.columns)
-
-
-# In[15]:
-
-
-#log_feat=feature_select(X_train_scaled,y_train,LogisticRegression,min_features=10)
-#X_train_best_log = X_train_scaled[log_feat]
-#X_test_best_log = X_test_scaled[log_feat]
-
-
-# In[16]:
-
-
-#len(X_test_best_log)
-
-
-# In[17]:
-
-
-#y_train = y_train.reset_index(drop=True)
-#y_train
-
-
-# ### 2b. Logistic Regression Model
-
-# In[18]:
-
-
-# Used to look at statistically significant coefficients
-# but not needed for coding purposes
-
-# log_reg_sum = sm.Logit(y_train, X_train_best_log).fit()
-# print(log_reg_sum.summary())
-
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-# In[21]:
-
 
 def logreg(X_train, X_test, y_train, y_test, cv=5):
-    
     
     # Set GridSearchCV hyperparameters to compare & select
     grid = {
@@ -190,20 +92,8 @@ def logreg(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-
-# In[22]:
-
-
-#logreg(X_train_best_log, X_test_best_log, y_train, y_test)
-
-
-# ### 2c. K-Nearest Neighbors Model
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-# In[17]:
-
-
+    
+    
 def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -271,49 +161,7 @@ def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-
-# In[18]:
-
-
-# Takes 6 minutes and 25 seconds to run
-#knn(X_train_scaled, X_test_scaled, y_train, y_test)
-
-
-# In[ ]:
-
-
-# # GridSearchCV alternative coded by hand (not to be used)
-# knn_dict={}
-# for index in range(1,33,2):
-#     knn_model = KNeighborsClassifier(n_neighbors=index)
-#     knn_log_loss = -1 * cross_val_score(knn_model, X_train,
-#                                         y_train, scoring="accuracy").mean()
-#     knn_dict[index] = knn_log_loss
-# min_knn = min(knn_dict.values())
-# low_key = list(knn_dict.keys())[list(knn_dict.values()).index(min_knn)]
-# knn = KNeighborsClassifier(n_neighbors=low_key,metric=metric)
-
-
-# ### 2d. Decision Tree Model
-
-# In[25]:
-
-
-#dtree_feats=feature_select(X_train_scaled,y_train,DecisionTreeClassifier,min_features=10)
-
-
-# In[26]:
-
-
-#X_train_best_dtree=X_train[dtree_feats]
-#X_test_best_dtree=X_test[dtree_feats]
-
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-# In[27]:
-
-
+    
 def dtree(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -381,28 +229,7 @@ def dtree(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-
-# In[28]:
-
-
-#Took 14 min to run
-#dtree(X_train_best_dtree, X_test_best_dtree, y_train, y_test)
-
-
-# ### 2e. Random Forest Model
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-# In[29]:
-
-
-#random_forest_feat=feature_select(X_train_scaled,y_train,RandomForestClassifier,min_features=10)
-#X_train_best_rforest=X_train_scaled[random_forest_feat]
-#X_test_best_rforest=X_test_scaled[random_forest_feat]
-
-
-# In[31]:
-
+    
 
 def random_forest(X_train, X_test, y_train, y_test, cv=5):
     
@@ -465,29 +292,8 @@ def random_forest(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
 
-
-# In[32]:
-
-
-# Takes 1 hour and 6 minutes
-#random_forest(X_train, X_test, y_train, y_test, cv=5)
-
-
-# ### 2f. Bagging Classifier Model
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-# In[ ]:
-
-
-#bagging_feat=feature_select(X_train_scaled,y_train,BaggingClassifier,min_features=10)
-#X_train_best_bag=X_train_scaled[bagging_feat]
-#X_test_best_bag=X_test_scaled[bagging_feat]
-
-
-# In[37]:
-
-
+    
+    
 def bagged(X_train, X_test, y_train, y_test, cv=5):
 
     # Set GridSearchCV hyperparameters to compare & select
@@ -528,14 +334,7 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     # Use best estimators from best_params
     bag_estimators = bag_params['n_estimators']
     print(f'# of Base Estimators: {bag_estimators}')
-    
-    # Instantiate & fit Bagging Classifier model(don't need to do this)
-    #bagging = BaggingClassifier(DecisionTreeClassifier(max_depth=bag_max_depth,
-                  #              criterion=bag_criterion), max_samples=bag_max_sample,
-                          #      max_features=bag_max_features, n_estimators=bag_estimators,
-                        #        random_state=42)
-    #bagging.fit(X_train, y_train)
-    
+
     # Create prediction variable using test data
     y_pred = gs.predict(X_test)
     
@@ -567,19 +366,8 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
 
-
-# In[38]:
-
-
-# Takes about 7-10 minutes to run
-#bagged(X_train_best_bag, X_test_best_bag, y_train, y_test, cv=5)
-
-
-# ### 2g. XGBoost Classifier Model
-
-# In[75]:
-
-
+    
+    
 def xgboost(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -651,16 +439,6 @@ def xgboost(X_train, X_test, y_train, y_test, cv=5):
     # Plot Confusion Matrix
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
-
-
-# In[76]:
-
-
-#xgboost(X_train, X_test, y_train, y_test, cv=5)
-
-
-# In[ ]:
-
 
 
 
