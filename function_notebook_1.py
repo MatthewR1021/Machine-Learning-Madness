@@ -18,6 +18,7 @@ from sklearn.feature_selection import RFECV
 import warnings
 warnings.filterwarnings("ignore")
 
+
 def feature_select(X_train,y_train,estimator,min_features,step=1):
     estimator2=estimator()
     selector=RFECV(estimator2,min_features_to_select=min_features,step=step)
@@ -28,7 +29,6 @@ def feature_select(X_train,y_train,estimator,min_features,step=1):
     
     
     return best_pred
-
 
 
 def logreg(X_train, X_test, y_train, y_test, cv=5):
@@ -92,8 +92,7 @@ def logreg(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-    
-    
+
 def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -161,7 +160,7 @@ def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-    
+
 def dtree(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -229,7 +228,6 @@ def dtree(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
 
-    
 
 def random_forest(X_train, X_test, y_train, y_test, cv=5):
     
@@ -292,8 +290,7 @@ def random_forest(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
 
-    
-    
+
 def bagged(X_train, X_test, y_train, y_test, cv=5):
 
     # Set GridSearchCV hyperparameters to compare & select
@@ -366,8 +363,7 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
 
-    
-    
+
 def xgboost(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -439,6 +435,5 @@ def xgboost(X_train, X_test, y_train, y_test, cv=5):
     # Plot Confusion Matrix
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
-
 
 
