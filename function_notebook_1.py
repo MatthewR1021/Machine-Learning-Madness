@@ -1,13 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Matt and Paul's Notebook
-
-# ## 1a. Packages and Libraries Import
-
-# In[8]:
-
-
 # Import the relevant packages
 import pandas as pd
 import numpy as np
@@ -29,8 +19,6 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-
-# Feature Selection
 def feature_select(X_train,y_train,estimator,min_features,step=1):
     estimator2=estimator()
     selector=RFECV(estimator2,min_features_to_select=min_features,step=step)
@@ -43,18 +31,7 @@ def feature_select(X_train,y_train,estimator,min_features,step=1):
     return best_pred
 
 
-
-
-# ### 2b. Logistic Regression Model
-
-
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
-
-
 def logreg(X_train, X_test, y_train, y_test, cv=5):
-    
     
     # Set GridSearchCV hyperparameters to compare & select
     grid = {
@@ -114,13 +91,6 @@ def logreg(X_train, X_test, y_train, y_test, cv=5):
     # Plot Confusion Matrix
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test)
-
-
-
-# ### 2c. K-Nearest Neighbors Model
-
-# Create a function to use GridSearchCV, find the best hyperparameters and then create a model with those results and values. Also print some scoring metrics to assess how well the model performs.
-
 
 
 def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
@@ -191,7 +161,6 @@ def knn(X_train, X_test, y_train, y_test, metric='minkowski', cv=5):
     plot_confusion_matrix(gs, X_test, y_test)
 
 
-
 def dtree(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -260,10 +229,6 @@ def dtree(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_test, y_test)
 
 
-
-# ### 2e. Random Forest Model
-
-
 def random_forest(X_train, X_test, y_train, y_test, cv=5):
     
     # Set GridSearchCV hyperparameters to compare & select
@@ -326,9 +291,6 @@ def random_forest(X_train, X_test, y_train, y_test, cv=5):
     plot_confusion_matrix(gs, X_test, y_test);
 
 
-# ### 2f. Bagging Classifier Model
-
-
 def bagged(X_train, X_test, y_train, y_test, cv=5):
 
     # Set GridSearchCV hyperparameters to compare & select
@@ -369,14 +331,7 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     # Use best estimators from best_params
     bag_estimators = bag_params['n_estimators']
     print(f'# of Base Estimators: {bag_estimators}')
-    
-    # Instantiate & fit Bagging Classifier model(don't need to do this)
-    #bagging = BaggingClassifier(DecisionTreeClassifier(max_depth=bag_max_depth,
-                  #              criterion=bag_criterion), max_samples=bag_max_sample,
-                          #      max_features=bag_max_features, n_estimators=bag_estimators,
-                        #        random_state=42)
-    #bagging.fit(X_train, y_train)
-    
+
     # Create prediction variable using test data
     y_pred = gs.predict(X_test)
     
@@ -407,8 +362,6 @@ def bagged(X_train, X_test, y_train, y_test, cv=5):
     # Plot Confusion Matrix
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
-
-
 
 
 def xgboost(X_train, X_test, y_train, y_test, cv=5):
@@ -482,9 +435,5 @@ def xgboost(X_train, X_test, y_train, y_test, cv=5):
     # Plot Confusion Matrix
     plot_confusion_matrix(gs, X_train, y_train)
     plot_confusion_matrix(gs, X_test, y_test);
-
-
-
-
 
 
